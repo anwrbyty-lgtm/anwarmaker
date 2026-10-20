@@ -27,12 +27,12 @@ jobs:
       - name: Get Dependencies
         run: flutter pub get
 
-      - name: Build Split Release APK (أصغر حجم)
-        run: flutter build apk --split-per-abi --release
+      - name: Build Release APK
+        run: flutter build apk --release
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ExamMaker-ARM64-APK
-          path: build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+          name: ExamMaker-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
           
