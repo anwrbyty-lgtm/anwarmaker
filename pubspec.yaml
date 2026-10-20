@@ -1,5 +1,5 @@
-name: exam_maker
-description: "تطبيق تحرير الاختبارات المدرسية السريع"
+name: anwarmaker
+description: "تطبيق تحرير الاختبارات المدرسية"
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -12,27 +12,14 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   
-  # إدارة الحالة والتخزين
-  flutter_riverpod: ^2.5.1
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
-  
-  # إنشاء وتصدير PDF والمعاينة
   pdf: ^3.10.8
   printing: ^5.13.1
-  
-  # اختيار الصور والرموز
-  image_picker: ^1.1.2
-  path_provider: ^2.1.3
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  hive_generator: ^2.0.1
-  build_runner: ^2.4.9
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/images/ # لوضع شعار الجمهورية أو الشعار المخصص
-    
+  
